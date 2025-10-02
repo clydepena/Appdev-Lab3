@@ -1,2 +1,2 @@
-Dwayne Pena & Renrich Fernandez
+Clyde & Ren
 Appdev - Lab act 3
