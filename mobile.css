@@ -1,0 +1,121 @@
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 70%;
+    }
+
+  /* ===== INDEX ===== */
+
+    .finduscontainer iframe {
+        flex-shrink: 1;
+        height: 200px;
+        margin-inline: 2em;
+    }
+
+    .card{
+        overflow: visible;
+        background: none;
+        height: 100%;
+    }
+
+    .card > img{
+        display: none;
+    }
+
+    /* ===== MENU ===== */
+
+    .menucontainer{
+        width: 95%;
+    }
+
+    .itemcontainer h1{
+        font-size: 1.6em;
+    }
+
+    /* ===== EVENTS ===== */
+
+    .eventcontainer{
+        width: 100%;
+        border-radius: 0em 0em 0em 0em;
+        overflow: visible;
+    }
+}
+
+
+@media only screen and (max-width: 550px) {
+    /* ===== HEADER ===== */
+
+    .navbar{
+        flex-direction: column-reverse;
+        gap: 1em;
+        padding-top: 1em;
+    }
+
+    .navbar ul {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+    }
+
+    .navbtn{
+        padding-top: 1em;
+    }
+
+    .mainSubtitle{
+        display: none;
+    }
+
+    /* ===== FOOTER ===== */
+    #footer{
+        flex-direction: column;
+    }
+
+    .footerbox{
+        width: 100%;
+        padding: 1em 0;
+    }
+
+    #footerline{
+        margin: 0 3em;
+    }
+
+    #navbarfooter{
+        position: static;
+        width: 100%;
+    }
+
+    /* ===== INDEX ===== */
+
+
+
+    /* ===== MENU ===== */
+
+    .menucontainer{
+        width: 95%;
+    }
+
+    .itemcontainer > * {
+        margin-inline: 2em;
+    }
+
+    .itemcontainer {
+        display: none;
+        flex-direction: column;
+        row-gap: 4em;
+        padding-block: 3em;
+    }
+
+    #coffee:checked ~ #coffeemenu {
+        display: flex;
+    }
+
+    #other:checked ~ #otheremenu {
+        display: flex;
+    }
+
+    #snack:checked ~ #snacksemenu {
+        display: flex;
+    }
+}

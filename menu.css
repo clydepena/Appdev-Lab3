@@ -1,0 +1,131 @@
+/* ======================== MENU ======================== */
+
+.menucontainer {
+  margin-block: 5em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  background-color: var(--ground_shade);
+  border-radius: 0 0 20px 20px;
+  /* outline: auto; */
+}
+
+.menucontainer > * {
+  width: 100%;
+}
+
+.itemcontainer {
+  display: none;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  grid-template-columns: repeat(2, 40%);
+  row-gap: 4em;
+  padding-block: 3em;
+}
+
+.itemcontainer > * {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1em;
+  padding-block: 0.5em;
+  border-bottom: var(--black) dashed 0.15em;
+}
+
+.itemcontainer div h1 {
+  font-weight: normal;
+}
+
+#coffee:checked ~ #coffeemenu {
+  display: grid;
+}
+
+#other:checked ~ #otheremenu {
+  display: grid;
+}
+
+#snack:checked ~ #snacksemenu {
+  display: grid;
+}
+
+.imgmenu {
+  display: none;
+}
+
+#coffee:checked ~ #imgcoffee {
+  display: block;
+}
+
+#other:checked ~ #imgother {
+  display: block;
+}
+
+#snack:checked ~ #imgsnack {
+  display: block;
+}
+
+.itemlbl {
+  color: var(--ground);
+  text-align: center;
+  background: var(--other1);
+  padding: 1em;
+  width: 15%;
+  position: absolute;
+  top: -2.25em;
+  border-radius: 15px;
+}
+
+.itemradio {
+  display: none;
+}
+
+.itemradio:checked + .itemlbl {
+  filter: drop-shadow(1px 1px 3px #1d1d1d) brightness(130%);
+  transition: transform 0.1s ease-in-out, box-shadow 0.2s ease-in-out;
+  animation: levitateSelected 2s ease-in-out 0ms infinite;
+  box-shadow: 0px 0px 10px 2px var(--other1);
+}
+
+@keyframes levitateSelected {
+  0% {
+    transform: translateY(0px);
+  }
+  10% {
+    transform: translateY(-6px);
+  }
+  20% {
+    transform: translateY(0px);
+  }
+  40% {
+    transform: translateY(-6px);
+  }
+  60% {
+    transform: translateY(0px);
+  }
+  80% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#coffeelbl {
+  left: 15%;
+}
+
+#snacklbl {
+  right: 15%;
+}
+
+.reminders > ul {
+  border-top: var(--black) solid 0.15em;
+  list-style-position: inside;
+  padding-inline: 6em;
+  padding-block: 2em;
+  line-height: 1.5em;
+}

@@ -1,0 +1,77 @@
+/* ======================== EVENTS ======================== */
+
+
+.eventbanner{
+  width: 100%;
+  text-align: center;
+  padding-block: 0.5em;
+  background: var(--tertiary);
+}
+
+#eventparentbox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  flex-wrap: nowrap;
+  gap: 3em;
+  overflow: hidden;
+  padding-block: 3em;
+}
+
+.eventitem{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.eventcontainer{
+  display: flex;
+  justify-content: end;
+  width: 80%;
+  height: auto;
+  background: var(--ground);
+  overflow: hidden;
+  border-radius: 0 1em 1em 0;
+}
+
+.eventcontainer > img{
+  width: 40%;
+  height: auto;
+}
+
+.eventcontainer:hover {
+  transition: transform 0.8s;
+  transform: scale(1.1);
+}
+
+.eventtitle{
+  display: flex;
+  align-items: center;
+}
+
+.eventtitle > img{
+  height: 2.5em;
+  width: auto;
+}
+
+.eventdesc{
+  margin: 3em;
+}
+
+.eventdesc > p{
+  font-style: italic;
+  padding-block: 0.5em;
+}
+
+.eventitem.right{
+  flex-direction: row-reverse;
+}
+
+.eventitem.right > .eventcontainer{
+  flex-direction: row-reverse;
+  justify-content: start;
+  border-radius: 1em 0 0 1em;
+}
+
