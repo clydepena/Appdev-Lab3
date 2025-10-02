@@ -86,7 +86,7 @@ body {
   align-items: center;
   flex-basis: 100%;
   list-style: none;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .navbar li:hover {
